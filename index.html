@@ -4,14 +4,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<title>Stephen Moody</title>
 	<style>
-		.navbar{
+		.header{
 			font-family: Montserrat, sans-serif;
 			font-size: 20px;
 			margin: 0px 40px;
 			padding: 10px;
 			border-bottom: solid 1px #afafaf;
+		}
+		.navbar{
+			text-align: right;
+			padding-right: 30px;
 		}
 		
 		@import url("https://fonts.googleapis.com/css?family=Montserrat:200");
@@ -36,6 +40,7 @@
 			background-size: cover;
 			color: #f2f2f2;
 			font-weight: 200;
+			padding-bottom: 70px;
 		}
 		.projectinfo{
 			padding:20px;
@@ -119,11 +124,17 @@
 				width: 90%;
 			}
 		}
+		.imgp{
+			border: solid #f2f2f2 2px;
+		}
 	</style>
 </head>
 <body>
-	<div class="navbar">
+	<div class="header">
 		Stephen Moody - Full Stack Developer
+	</div>
+	<div class="navbar">
+		<h4><a href="#images">Example Projects</a> // <a href="#gtag">Project Details</a> //  <a href="#contact">Contact</a></h4>
 	</div>
 	<div>
 	<h1 class="learn">
@@ -131,34 +142,88 @@
 	</h1>
 	</div>
 	
-	<div>																		  
-		<div class="projectimg changing"><a href="https://gbrand-network.herokuapp.com/" target="_blank"><img style="width: 90%" src="game-tag.jpg" /><p>Visit Website</p><br></a></div>
-		<div class="projectimg changing"><a href="https://pokemondashboard.herokuapp.com/" target="_blank"><img style="width: 90%" src="pokemondashboard.jpg" /><p>Visit Website</p><br></a></div>
-		<div class="projectimg changing"><a href="#portfolio"><img style="width: 90%" src="Portfolio.jpg" /><p>Website Info</p><br></a></div>
-	</div>
-	<div id="gtag" class="projectinfo">
-		<h3>Just Another Social Network</h3>
-		<p>Primarily built on Django - The website offers a number of features similar to most Social Networks and a number of "Niche" features specific to the website.  The website is a social Network for Competitive Gamers and we allow users to make "Character Profiles".  Each Character Profile can add specific attributes based on the game that they play.  While some games require only one attribute, others are more complex and may require 3 or more, the design of these "Attributes" allow flexibitly without creating different object - The website also has a flexible searching system for game characters that your would like to play with, which have desirable attributes and ranking.</p>
-	</div>
-	<div id="visual" class="projectinfo">
-		<h3>Data Visualisation</h3>
-		<p>Using Python, D3, JavaScript and MongoDB.</p>
-		<p>Cut through explanations and get to the heart of analysing data quickly using interactive charts and statistics.  Whatever the Database, there is a way to represent it quickly.  For this example we sort attributes of Pokemon.  I offer a theory into the rise, fall and rebirth of one of the highest-grossing media franchise - through a sales comparisson against vs. the characters that made the company.</p>
-	</div>
-	
-	<div id="portfolio" class="projectinfo">
-		<h3>Keep It Simple</h3>
-		<p>There is no point re-inventing the wheel.  Simple and sleek designs that are lightweight and simple to navigate.</p>
-	</div>
-	<div class="projectinfo">
-		<h3>Got a Project in Mind?</h3>
-		<br/>
-		<form action="mailto:darilli@gmail.com" method="post" enctype="text/plain">
-				<button class="button" type="submit"> Get In Touch<span></span></button>
-		</form>
+	<div id="images">																		  
+		<div class="projectimg changing">
+			<a href="https://gbrand-network.herokuapp.com/" target="_blank">
+				<img class="imgp" alt="Image for Social Network Example Project" style="width: 90%" src="game-tag.jpg" />
+			</a>
+			<h4>Working Social Network</h4>
+			<a href="#gtag">
+				<p>More Info</a> or 
+			
+			<a href="https://gbrand-network.herokuapp.com/" target="_blank">
+			Visit Website</p><br>
+			</a>
+		</div>
+		
+		<div class="projectimg changing">
+			<a href="https://pokemondashboard.herokuapp.com/" target="_blank">
+				<img class="imgp" alt="Image for a Pokemon Themed Dashboard Example Project" style="width: 90%" src="pokemondashboard.jpg" />
+			</a>
+			<h4>Visual Data Dashboard</h4>
+			<a href="#visual">
+				<p>More Info</a> or 
+			
+			<a href="https://pokemondashboard.herokuapp.com/" target="_blank">
+				Visit Website</p><br>
+			</a>
+		</div>
+		
+		<div class="projectimg changing">
+			<a href="#portfolio">
+				<img class="imgp" style="width: 90%" src="Portfolio.jpg" />
+				</a><h4>Portfolio Info</h4>
+				<a href="#portfolio"><p>Read More</p><br>
+			</a>
+		</div>
 		
 	</div>
-	<br><br><br><br><br><br><br><br><br>
+	<div id="portfolioinfo">
+		<div id="gtag" class="projectinfo">
+			<h3>Just Another Social Network</h3>
+			<p>Python, Django, JavaScript, PostgreSQL and AJAX.</p>
+			<p>Django's powerful inbuilt tools are provide a dynamic and effective regististration system.  JavaScript helps sizing of components on certain pages of the website and extra responsive behalviours.
+			  Unfortunately due to certain requirements the website has, search and filtering systems of Django and PostgreSQL, custom Python script is used for customisable character searches.  AJAX is used on the website for a basic instant messaging system.
+			</p>
+		</div>
+		<div id="visual" class="projectinfo">
+			<h3>Data Visualisation</h3>
+			<p>Using Python, D3, JavaScript, Flask and MongoDB.</p>
+			<p>Cut through explanations and get to the heart of analysing data quickly using interactive charts and statistics.  Whatever the Database, there is a way to represent it quickly.  For this example we sort attributes of Pokemon.  On this Database we chart the statistics of the characters in Pokemon.</p>
+			<p>Why Pokemon?</p>
+			<p>Pokemon be the largest grossing Media Franchise but that fact is not why I chose it.  It is the variety of attributes that can be examined that drew my interest.  "Types", "Generations", "Legendary" status and examined not only noted figures.</p>
+		</div>
+		
+		<div id="portfolio" class="projectinfo">
+			<h3>Keep It Simple</h3>
+			<p>There is no point re-inventing the wheel.  Simple and sleek designs that are lightweight and simple to navigate.</p>
+			<p>This Portfolio Website uses only HTML, JavaScript and CSS.</p>
+		</div>
+		<div id="contact" class="projectinfo">
+			<h3>Got a Project in Mind?</h3>
+			<br/>
+			<form action="mailto:stephenmoodydev@gmail.com" method="post" enctype="text/plain">
+					<button class="button" type="submit"> Get In Touch<span></span></button>
+			</form>
+			
+		</div>
+		
+		<div id="aboutme" class="projectinfo">
+			<h4>Blurb</h4>
+			<p>Born and raised in Dublin.  Studied International Hospitality Management in DIT.  After working 10 years in the Hospitality Industry, it was time for a change my career.  Coding had been a past time for a few years and when an opportunity came up to expand my skills, I took it.</p>
+			<p>Now I am currently awaiting grading for my Diploma in Software Development through the Code Institute.</p>
+			
+			<h4>Why Should You Choose Me?</h4>
+			<p>If you are looking for a creative, adaptable and professional member of your team - I am your man.  Should you require me to adapt to a non-prefered language/framework, I will be perfectly comfortable short notice.</p>
+			
+		</div>
+		
+		
+	</div>
+	
+	
+	
+	
 	<script>
 	function setEqualHeight(){
 		var x = document.getElementsByClassName("changing");
@@ -176,6 +241,8 @@ messages = [
   'HTML?',
   'Python?',
   'JavaScript?',
+  'Django?',
+  'Angular',
   
 ];
 let currentMessage = 0;
