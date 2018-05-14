@@ -5,129 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Stephen Moody</title>
-	<style>
-		.header{
-			font-family: Montserrat, sans-serif;
-			font-size: 20px;
-			margin: 0px 40px;
-			padding: 10px;
-			border-bottom: solid 1px #afafaf;
-		}
-		.navbar{
-			text-align: right;
-			padding-right: 30px;
-		}
-		
-		@import url("https://fonts.googleapis.com/css?family=Montserrat:200");
-		* {
-			box-sizing: border-box;
-			font-family: Montserrat, sans-serif;
-			
-		}
-		body, html {
-			margin: 0;
-			padding: 0;
-		}
-		p{
-			font-size:14px;
-		}
-		body {
-			text-align:center;
-			background: #111;
-			background-image: url(https://images.pexels.com/photos/234527/pexels-photo-234527.jpeg?cs=srgb&dl=apple-devices-computer-contemporary-234527.jpg&fm=jpg);
-			background-position: center center;
-			background-attachment: fixed;
-			background-size: cover;
-			color: #f2f2f2;
-			font-weight: 200;
-			padding-bottom: 70px;
-		}
-		.projectinfo{
-			padding:20px;
-			background: rgba(5, 5, 5, .3);
-			text-align: justify;
-			width: 80%;
-			margin: auto;
-		}
-		.learn {
-			text-align:center;
-			font-family: Montserrat, sans-serif;
-			text-align: center;
-			padding: 10px;
-		}
-		.cursor {
-				display: inline-block;
-				height: 40px;
-				width: 5px;
-				background: #fafafa;
-				vertical-align: middle;
-				animation: 2s blink linear infinite;
-				
-				
-		}
-		@keyframes blink {
-			0%,49% {
-				opacity: 0;
-				}
-			50%,100% {
-			opacity: 1;
-			}
-		}
-		.button {
-			display: inline-block;
-			border-radius: 4px;
-			background-color: gray;
-			border: solid white 1px;
-			color: #FFFFFF;
-			text-align: center;
-			font-size: 20px;
-			padding: 10px;
-			width: 200px;
-			transition: all 0.5s;
-			cursor: pointer;
-			margin: 5px;
-		}
-
-		.button span {
-			cursor: pointer;
-			display: inline-block;
-			position: relative;
-			transition: 0.5s;
-		}
-
-		.button span:after {
-			content: '\00bb';
-			position: absolute;
-			opacity: 0;
-			top: -18px;
-			right: -25px;
-			transition: 0.5s;
-		}
-
-		.button:hover span {
-			padding-right: 25px;
-		}
-
-		.button:hover span:after {
-			opacity: 1;
-			right: 0;
-		}
-		@media only screen and (min-width: 600px) {
-			.projectimg{
-				display: inline-block;
-				width: 30%;
-			}
-		}
-		@media only screen and (max-width: 600px) {
-			.projectimg{
-				display: inline-block;
-				width: 90%;
-			}
-		}
-		.imgp{
-			border: solid #f2f2f2 2px;
-		}
-	</style>
+	<link rel="stylesheet" href="static/css/style.css" type="text/css" />
 </head>
 <body>
 	<div class="header">
@@ -145,7 +23,7 @@
 	<div id="images">																		  
 		<div class="projectimg changing">
 			<a href="https://gbrand-network.herokuapp.com/" target="_blank">
-				<img class="imgp" alt="Image for Social Network Example Project" style="width: 90%" src="game-tag.jpg" />
+				<img class="imgp" alt="Image for Social Network Example Project" style="width: 90%" src="static/img/game-tag.jpg" />
 			</a>
 			<h4>Working Social Network</h4>
 			<a href="#gtag">
@@ -158,7 +36,7 @@
 		
 		<div class="projectimg changing">
 			<a href="https://pokemondashboard.herokuapp.com/" target="_blank">
-				<img class="imgp" alt="Image for a Pokemon Themed Dashboard Example Project" style="width: 90%" src="pokemondashboard.jpg" />
+				<img class="imgp" alt="Image for a Pokemon Themed Dashboard Example Project" style="width: 90%" src="static/img/pokemondashboard.jpg" />
 			</a>
 			<h4>Visual Data Dashboard</h4>
 			<a href="#visual">
@@ -171,7 +49,7 @@
 		
 		<div class="projectimg changing">
 			<a href="#portfolio">
-				<img class="imgp" style="width: 90%" src="Portfolio.jpg" />
+				<img class="imgp" style="width: 90%" src="static/img/portfolio.jpg" />
 				</a><h4>Portfolio Info</h4>
 				<a href="#portfolio"><p>Read More</p><br>
 			</a>
@@ -213,7 +91,7 @@
 			<p>Born and raised in Dublin.  Studied International Hospitality Management in DIT.  After working 10 years in the Hospitality Industry, it was time for a change my career.  Coding had been a past time for a few years and when an opportunity came up to expand my skills, I took it.</p>
 			<p>Now I am currently awaiting grading for my Diploma in Software Development through the Code Institute.</p>
 			
-			<h4>Why Should You Choose Me?</h4>
+			<h4>Why You want To Work With Me</h4>
 			<p>If you are looking for a creative, adaptable and professional member of your team - I am your man.  Should you require me to adapt to a non-prefered language/framework, I will be perfectly comfortable short notice.</p>
 			
 		</div>
